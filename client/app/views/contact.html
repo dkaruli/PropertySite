@@ -1,0 +1,49 @@
+<div layout="row" layout-padding="" ng-cloak="" class="inputdemoIcons">
+  <div flex="30">
+    <md-card class="md-raised" md-theme-watch>
+      <h2>Contact Info</h2>
+      <md-divider></md-divider>
+      <md-list>
+        <md-list-item>
+          <md-icon>email</md-icon><p>: dkaruli@gmail.com</p>
+      </md-list-item>
+        <md-list-item>
+    <md-icon>phone</md-icon><p>: 727-772-3612</p>
+          </md-list-item>
+        </md-list>
+      </md-card>
+</div>
+
+  <div flex="70">
+<form name="projectForm">
+<br>
+<md-content class="md-no-momentum">
+  <md-input-container class="md-icon-float md-block">
+      <label>Name</label>
+      <md-icon class="name">person</md-icon>
+      <input ng-model="user.name" type="text">
+    </md-input-container>
+
+    <md-input-container md-no-float="" class="md-block">
+      <md-icon>phone</md-icon>
+      <input ng-model="user.phone" type="text" placeholder="Phone Number">
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <md-icon class="email">email</md-icon>
+      <input ng-model="user.email" type="email" placeholder="Email (required)" ng-required="true">
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <md-icon style="display:inline-block;">comment</md-icon>
+      <input ng-model="user.address" type="text" placeholder="Comments">
+    </md-input-container>
+  </md-content>
+  <div>
+    <md-button type="submit">Send</md-button>
+  </div>
+</form>
+    </div>
+</div>
+
+
